@@ -43,14 +43,6 @@ Federal Tax Withheld: ${1:,.2f}
 Total Withheld: ${2:,.2f}
 Total Take-Home Pay: ${3:,.2f}""".format(provTaxHeld, fedTaxHeld, totalWithheld, totalTakeHome))
 
-    
-
-
-
-
-
-
-
     # YOUR CODE ENDS HERE
 
 main()
