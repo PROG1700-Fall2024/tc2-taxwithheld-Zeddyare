@@ -29,14 +29,19 @@ def main():
     provTaxHeld=salary*provincialTax
     depDeduction=(salary*dependentTax)*dependents 
     totalWithheld=fedTaxHeld+provTaxHeld-depDeduction 
-    totalTakeHome=salary-totalWithheld 
+    totalTakeHome=salary-totalWithheld  
 
     if dependents > 0:
         print("Provincial Tax Withheld: ${0:,.2f}".format(provTaxHeld))
         print("Federal Tax Withheld: ${0:,.2f}".format(fedTaxHeld))
         print("Dependent Deduction for {0} dependents: ${1:,.2f}".format(dependents, depDeduction))
         print("Total Withheld: ${0:,.2f}".format(totalWithheld))
-        print("Total Take-Home Pay: ${0:,.2f}".format(totalTakeHome))
+        print("Total Take-Home Pay: ${0:,.2f}".format(totalTakeHome)) 
+    else:
+        print("Provincial Tax Withheld: ${0:,.2f}".format(provTaxHeld))
+        print("Federal Tax Withheld: ${0:,.2f}".format(fedTaxHeld))
+        print("Total Withheld: ${0:,.2f}".format(totalWithheld))
+        print("Total Take-Home Pay: ${0:,.2f}".format(totalTakeHome)) 
     
 
 
